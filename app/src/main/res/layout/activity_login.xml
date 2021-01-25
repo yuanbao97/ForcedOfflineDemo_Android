@@ -57,15 +57,26 @@
         app:constraint_referenced_ids="passwordTextView,passwordEditView"
         />
 
-    <Button
-        android:id="@+id/button"
+    <CheckBox
+        android:id="@+id/rememberCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="20dp"
+        android:text="记住密码"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
         app:layout_constraintTop_toBottomOf="@+id/barrier"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
